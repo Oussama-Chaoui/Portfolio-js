@@ -1,0 +1,81 @@
+$header_height: 3rem;
+
+// colors
+$hue_color: 250; //purple 250, green 142, blue 230, pink 340
+
+//hsl colors
+
+$first_color: hsl($hue_color, 69%, 61%);
+$first_color_alt: hsl($hue_color, 57%, 53%);
+$first_color_lighter: hsl($hue_color, 92%, 85%);
+$text_color_light: hsl($hue_color, 8%, 65%);
+
+$first_color_second: hsl($hue_color, 69%, 61%);
+$title_color: hsl($hue_color, 8%, 15%);
+$text_color: hsl($hue_color, 8%, 45%);
+$input_color: hsl($hue_color, 92%, 85%);
+$body_color: hsl($hue_color, 60%, 99%);
+$container_color: #fff;
+
+// //dark mofde
+
+// $first_color_second: hsl($hue_color, 30%, 8%);
+// $title_color: hsl($hue_color, 8%, 95%);
+// $text_color: hsl($hue_color, 8%, 75%);
+// $input_color: hsl($hue_color, 29%, 16%);
+// $body_color: hsl($hue_color, 28%, 12%);
+// $container_color: hsl($hue_color, 29%, 16%);
+// //end dark mode
+
+$scroll_bar_color:#222;
+$scroll_thumb_color:  $first_color;
+
+
+// $scroll_bar_color: hsl($hue_color, 12%, 90%);
+// $scroll_thumb_color: hsl($hue_color, 12%, 80%);
+
+//font and typography
+$body_font: "Poppins", sans-serif;
+
+//font size
+$big_font_size: 2rem;
+$h1_font_size: 1.5rem;
+$h2_font_size: 1.25rem;
+$h3_font_size: 1.125rem;
+$normal_font_size: 0.938rem;
+$small_font_size: 0.813rem;
+$smaller_font_size: 0.75rem;
+
+//font weight
+$font_meduim: 500;
+$font_semi_bold: 600;
+
+//margens button
+
+$m_0-25: 0.25rem;
+$m_0-5: 0.5rem;
+$m_0-75: 0.75rem;
+$m_1: 1rem;
+$m_1-5: 1.5rem;
+$m_2: 2rem;
+$m_2-5: 2.5rem;
+$m_3: 3rem;
+
+// z-index
+
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;
+
+//dark mode
+
+body {
+  &.dark-theme {
+    $first_color_second: hsl($hue_color, 30%, 8%);
+    $title_color: hsl($hue_color, 8%, 95%);
+    $text_color: hsl($hue_color, 8%, 75%);
+    $input_color: hsl($hue_color, 29%, 16%);
+    $body_color: hsl($hue_color, 28%, 12%);
+    $container_color: hsl($hue_color, 29%, 16%);
+  }
+}

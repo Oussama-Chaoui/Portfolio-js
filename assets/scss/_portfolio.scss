@@ -1,0 +1,61 @@
+.portfolio {
+    &__container {
+        overflow: initial;
+    }
+
+    &__content {
+        padding: 0 1.5rem;
+    }
+
+    &__img {
+        width: 265pc;
+        border-radius: 0.5rem;
+        justify-self: center;
+    }
+
+    &__data {
+    }
+
+    &__title {
+        font-size: $h3_font_size;
+        margin-bottom: $m_0-5;
+    }
+
+    &__description {
+        margin-bottom: $m_0-75;
+    }
+
+    &__button {
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        display: none;
+    }
+
+    .swiper-button-prev {
+        left: -1rem;
+    }
+    .swiper-button-next {
+        right: -1rem;
+    }
+
+    .swiper-portfolio-icon {
+        font-size: 2rem;
+        color: $first_color;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: $first_color;
+    }
+
+    .swiper-pagination-horizontal {
+        bottom: -3rem;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev,
+    .swiper-pagination-bullet {
+        outline: none;
+    }
+}

@@ -1,0 +1,61 @@
+.testimonial{
+    &__container{
+        
+    }
+
+    &__content{
+
+    }
+
+    &__data{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $m_1;
+    }
+
+    &__header{
+        display: flex;
+        
+
+
+    }
+
+    &__img{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        margin-right: $m_0-75;
+    }
+
+    &__name{
+        font-size: $h3_font_size;
+        font-weight: $font_meduim;
+    }
+
+    &__client{
+        font-size: $small_font_size;
+        color: $text_color_light;
+    }
+
+    &__iconStar{
+        color: $first_color;
+        text-align: left;
+    }
+
+    &__stars{
+    text-align: right; 
+    }
+
+    &__description{
+        margin-bottom: $m_2-5;
+    }
+
+    .swiper-pagination-horizontal{
+        bottom: 0px;
+    }
+
+    .swiper-pagination-bullet-active{
+        background-color: $first_color;
+    }
+
+}

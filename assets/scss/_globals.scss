@@ -1,0 +1,159 @@
+//fonts
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 $header_height;
+  font-family: $body_font;
+  font-size: $normal_font_size;
+  background-color: $body_color;
+  color: $text_color;
+
+  
+
+  &.overflow-hidden {
+    overflow: hidden;
+  }
+}
+
+
+
+h1,
+h2,
+h3,
+h4 {
+  color: $title_color;
+  font-weight: $font_semi_bold;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 2rem 0 4rem;
+}
+
+.section__title {
+  font-size: $h1_font_size;
+}
+
+.section__subtitle {
+  display: block;
+  font-size: $small_font_size;
+  margin-bottom: $m_3;
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto !important;
+  float: none;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: $first_color;
+  color: #fff;
+  padding: 0.9rem 1rem 1rem 1rem;
+  height: 55px;
+  border-radius: 0.5rem;
+  font-weight: $font_meduim;
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    background-color: #fff;
+    height: 55px;
+    color: $first_color;
+    border: 3px solid $first_color;
+    font-weight: 1000;
+    padding: 0.9rem 1rem 1rem 1rem;
+    .buttonIcon {
+      margin-left: $m_1;
+    }
+  }
+}
+
+.buttonIcon {
+  font-size: 1.25rem;
+  margin-left: $m_0-5;
+  transition: margin 300ms ease-in-out;
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+.button--small {
+  padding: 0.75rem 1rem 0.65rem 1rem;
+  &:hover {
+    padding: 0.75rem 1rem 0.65rem 1rem;
+  }
+}
+
+.button--white {
+  background-color: #fff;
+  color: $first_color;
+
+  &:hover {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+}
+
+.button--link {
+  padding: 0;
+  background-color: transparent;
+  color: $first_color;
+
+  &:hover {
+    background-color: transparent;
+    color: $first_color_alt;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: $scroll_bar_color;
+  border-radius: 0.5rem;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: $scroll_thumb_color;
+  border-radius: 0.5rem;
+
+  &:hover {
+    background-color: $text_color_light;
+  }
+}

@@ -1,0 +1,108 @@
+.header {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: $z-fixed;
+    background-color: $body_color;
+
+    &__nav {
+        
+        height: $header_height;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+    }
+
+    &__logo{
+        color: $title_color;
+        font-weight: $font_meduim;
+        font-size: $h2_font_size;
+
+        &:hover{
+            color: $first_color;
+        }
+       }
+
+    
+
+    &__list {
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: $small_font_size;
+        color: $title_color;
+        font-weight: $font_meduim;
+        transition: all 200ms ease-in-out;
+
+        &:hover{
+            color: $first_color;
+        }
+    }
+
+    &__icon{
+        font-size: 1.5rem;
+    }
+
+    &__close {
+        position: absolute;
+        right: 1.1rem;
+        bottom: 0.1rem;
+        font-size: 2rem;
+        cursor: pointer;
+        color: $first_color;
+
+        &:hover{
+            color: $first_color_alt;
+        }
+    }
+
+    &__btns{
+        display: flex;
+        align-items: center;
+    }
+
+    .change-theme{
+        font-size: 1.25rem;
+        color: $title_color;
+        margin-right: $m_1;
+        cursor: pointer;
+
+        &:hover{
+            color: $first_color;
+        }
+    }
+
+    &__toggle {
+        color: $title_color;
+        font-weight: $font_meduim;
+        font-size: 1.5rem;
+        cursor: pointer;
+
+        &:hover{
+            color: $first_color;
+        }
+    }
+ 
+    .open {
+        bottom: 0%;
+    }
+}
+
+
+.active-link{
+    color: $first_color;
+}
+
+.scroll-header{
+    box-shadow: 0 -1px 4px rgba(0,0,0,0.15);
+}
+
+

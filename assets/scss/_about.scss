@@ -1,0 +1,48 @@
+.about{
+
+    &__container{
+
+    }
+
+    &__img{
+        width: 400px;
+        border-radius: 0.5rem;
+        justify-self: center;
+        align-self: center;
+    }
+
+    &__data{
+
+    }
+
+    &__description{
+        text-align: center;
+        margin-bottom: $m_2-5;
+    }
+
+    &__info{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: $m_2-5;
+    }
+
+    &__infoTitle{
+        display: block;
+        text-align: center;
+        font-size: $h2_font_size;
+        font-weight: $font_semi_bold;
+        color: $title_color;
+    }
+
+    &__infoName{
+        display: block;
+        text-align: center;
+        font-size: $smaller_font_size;
+    }
+
+    &__button{
+        display: flex;
+        justify-content: center;
+    }
+    
+}

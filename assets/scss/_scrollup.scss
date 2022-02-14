@@ -1,0 +1,25 @@
+.scrollup{
+
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color: $first_color;
+    opacity: 0.8;
+    padding: 0 0.3rem;
+    border-radius: 0.4rem;
+    z-index: $z-tooltip;
+    transition: all 0.4s ease-in-out;   
+
+    &:hover{
+        color: $first_color_alt;
+    }
+
+    &__icon{
+        font-size: 1.5rem;
+        color: #fff;
+    }
+}
+
+.show-scroll{
+    bottom: 5rem;
+}

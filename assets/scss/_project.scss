@@ -1,0 +1,41 @@
+.project{
+
+    text-align: center;
+
+    &__bg{
+        background-color: $first_color_second;
+        padding-top: 3rem;
+    }
+
+    &__container{
+
+    }
+
+    &__data{
+
+    }
+
+    &__title{
+        font-size: $h2_font_size;
+        margin-bottom: $m_0-75;
+        color: white;
+    }
+
+    &__description{
+        margin-bottom: $m_1-5;
+        color: white;
+    }
+
+    &__button{
+
+    }
+
+    &__icon{
+
+    }
+
+    &__img{
+        width: 232pc;
+        justify-self: center;
+    }
+}
